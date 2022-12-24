@@ -1,10 +1,11 @@
-//play again
+//scoreboard
 var wins = 0;
 var ties = 0;
 var losses = 0
 
 options = ["R", "P", "S"]
 
+//initiate start-up
 var start = confirm("Would you like to play a game?")
     if(start){        
         window.alert("Get ready to throw down!")
@@ -14,6 +15,7 @@ var start = confirm("Would you like to play a game?")
         window.alert("Thank you come again.")
     }
 
+//the game part
 function playGame(){
             playerChoice = window.prompt("Rock (R), paper (P), or scissors(S)?")
             playerChoice = playerChoice.toUpperCase()
